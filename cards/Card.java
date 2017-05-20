@@ -4,12 +4,10 @@ public class Card {
 
   private CardSuit suit;
   private CardRank rank;
-  private int value;
 
   public Card(CardSuit suit, CardRank rank){
     this.suit = suit;
     this.rank = rank;
-    this.value = value;
   }
 
   public CardSuit getSuit(){
@@ -20,7 +18,4 @@ public class Card {
     return this.rank;
   }
 
-  // public void checkValue(CardRank card){
-  //   this.value += card.getRank();
-  // }
 }

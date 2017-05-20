@@ -5,12 +5,11 @@ import cards.*;
 public class CardTest {
 
   Card card;
-  // CardValue value;
+  CardRank rank;
   
   @Before 
   public void before(){
     card = new Card(CardSuit.DIAMONDS, CardRank.ACE);
-    // value = CardRank.KING;
   }
 
   @Test
@@ -35,10 +34,11 @@ public class CardTest {
     assertEquals(CardRank.JACK, card.getRank());
   }
 
-  // @Test
-  // public void canCheckCardValue() {
-  //   card.checkValue(value);
-  //   assertEquals(1, card.getValue());
-  // }
+  @Test
+  public void canCheckCardValue() {
+    rank = CardRank.KING;
+    assertEquals(10, rank.getValue());
+  }
+
 
 }
