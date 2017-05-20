@@ -1,4 +1,4 @@
-package cards;
+package game;
 
 public enum CardRank {
   ACE(1),

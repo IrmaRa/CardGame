@@ -1,6 +1,6 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
-import cards.*;
+import game.*;
 import java.util.*;
 
 public class PlayerTest {

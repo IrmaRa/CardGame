@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-import cards.*;
+import game.*;
 import java.util.*;
 
 public class DeckTest {

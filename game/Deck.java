@@ -1,5 +1,5 @@
+package game;
 import java.util.*;
-import cards.*;
 
 public class Deck {
   public ArrayList<Card> deck;
