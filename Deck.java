@@ -12,7 +12,7 @@ public class Deck {
     return this.deck.size();
   }
 
-  public void addCard() {
+  public void buildDeck() {
     for (CardSuit suit : CardSuit.values()){
       for (CardValue value : CardValue.values()){
         this.deck.add(new Card(suit, value));
@@ -20,5 +20,10 @@ public class Deck {
     }
   }
 
+  public void dealCard(Player player) {
+    Card card = this.deck.remove(0);
+    player.getCard(card);
+
+  }
 
 }
