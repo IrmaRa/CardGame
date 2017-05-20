@@ -23,7 +23,6 @@ public class Deck {
   public void dealCard(Player player) {
     Card card = this.deck.remove(0);
     player.getCard(card);
-
   }
 
 }

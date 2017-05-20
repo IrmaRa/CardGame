@@ -41,5 +41,4 @@ public class CardTest {
     assertEquals(10, rank.getValue());
   }
 
-
 }

@@ -27,12 +27,6 @@ public class PlayerTest {
   }
 
   @Test
-  public void canGetCardsFromDeck() {
-    player.getCard(card);
-    assertEquals(1, player.cardCount());
-  }
-
-  @Test
   public void canGetValueOfCardInHand() {
     player.getCard(card);
     assertEquals(10, player.getHandValue());

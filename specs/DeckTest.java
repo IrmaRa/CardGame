@@ -22,11 +22,12 @@ public class DeckTest {
   }
 
   @Test
-  public void canDealCardsToPlayers() {
+  public void canDealCardToPlayers() {
     deck.buildDeck();
     deck.dealCard(player1);
     deck.dealCard(player2);
     assertEquals(1, player1.cardCount());
     assertEquals(1, player2.cardCount());
   }
+
 }

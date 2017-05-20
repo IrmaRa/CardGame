@@ -22,4 +22,3 @@ valid_files = find_valid_files()
 Dir.chdir "bin"
 
 run_tests(valid_files)
-
