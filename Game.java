@@ -16,5 +16,10 @@ public class Game {
     this.players.add(player);
   }
 
+  public String findWinner(Player player1, Player player2) {
+    if(player1.getHandValue() > player2.getHandValue()){
+      return player1.getName();
+    } return player2.getName(); 
   }
 
+}

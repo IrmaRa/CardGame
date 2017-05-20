@@ -18,20 +18,20 @@ public class Player {
     return this.hand;
   }
 
-  public int getHandValue() {
-    int total = 0;
-    for(Card card : hand) {
-      total += card.getRankValue();
-    }
-    return total;
-  }
-
   public int cardCount(){
     return this.hand.size();
   }
 
   public void getCard(Card card){
     this.hand.add(card);
+  }
+
+  public int getHandValue() {
+    int total = 0;
+    for(Card card : hand) {
+      total += card.getRankValue();
+    }
+    return total;
   }
 
 }
