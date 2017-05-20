@@ -14,6 +14,10 @@ public class Player {
     return this.name;
   }
 
+  public ArrayList<Card> getHand() {
+    return this.hand;
+  }
+
   public int cardCount(){
     return this.hand.size();
   }

@@ -3,10 +3,12 @@ package cards;
 public class Card {
 
   private CardSuit suit;
-  private CardValue value;
+  private CardRank rank;
+  private int value;
 
-  public Card(CardSuit suit, CardValue value){
+  public Card(CardSuit suit, CardRank rank){
     this.suit = suit;
+    this.rank = rank;
     this.value = value;
   }
 
@@ -14,7 +16,11 @@ public class Card {
     return this.suit;
   }
 
-  public CardValue getValue(){
-    return this.value;
+  public CardRank getRank(){
+    return this.rank;
   }
+
+  // public void checkValue(CardRank card){
+  //   this.value += card.getRank();
+  // }
 }

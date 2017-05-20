@@ -11,7 +11,7 @@ public class PlayerTest {
   @Before
   public void before() {
     player = new Player("Louise");
-    card = new Card(CardSuit.DIAMONDS, CardValue.TWO);
+    card = new Card(CardSuit.DIAMONDS, CardRank.TWO);
     deck = new Deck();
   }
 
@@ -31,4 +31,5 @@ public class PlayerTest {
     player.getCard(card);
     assertEquals(1, player.cardCount());
   }
+
 }

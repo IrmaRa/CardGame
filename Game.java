@@ -1,4 +1,5 @@
 import java.util.*;
+import cards.*;
 
 public class Game {
   private ArrayList<Player> players;
@@ -14,4 +15,12 @@ public class Game {
   public void addPlayer(Player player) {
     this.players.add(player);
   }
-}
+
+  // public void getWinner() {
+  //   for(Player player : Player()){
+  //     if(player.getHand())
+  //   }
+  // }
+
+
+    }

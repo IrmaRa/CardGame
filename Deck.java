@@ -14,7 +14,7 @@ public class Deck {
 
   public void buildDeck() {
     for (CardSuit suit : CardSuit.values()){
-      for (CardValue value : CardValue.values()){
+      for (CardRank value : CardRank.values()){
         this.deck.add(new Card(suit, value));
       }
     }

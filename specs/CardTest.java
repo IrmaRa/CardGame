@@ -5,10 +5,12 @@ import cards.*;
 public class CardTest {
 
   Card card;
+  // CardValue value;
   
   @Before 
   public void before(){
-    card = new Card(CardSuit.DIAMONDS, CardValue.ACE);
+    card = new Card(CardSuit.DIAMONDS, CardRank.ACE);
+    // value = CardRank.KING;
   }
 
   @Test
@@ -17,20 +19,26 @@ public class CardTest {
   }
 
   @Test
-  public void canGetValue(){
-    assertEquals(CardValue.ACE, card.getValue());
+  public void canGetRank(){
+    assertEquals(CardRank.ACE, card.getRank());
   }
 
   @Test
   public void canGetAnotherSuit() {
-    card = new Card(CardSuit.HEARTS, CardValue.FIVE);
+    card = new Card(CardSuit.HEARTS, CardRank.FIVE);
     assertEquals(CardSuit.HEARTS, card.getSuit());
   }
 
   @Test
-  public void canGetAnotherValue() {
-    card = new Card(CardSuit.SPADES, CardValue.JACK);
-    assertEquals(CardValue.JACK, card.getValue());
+  public void canGetAnotherRank() {
+    card = new Card(CardSuit.SPADES, CardRank.JACK);
+    assertEquals(CardRank.JACK, card.getRank());
   }
+
+  // @Test
+  // public void canCheckCardValue() {
+  //   card.checkValue(value);
+  //   assertEquals(1, card.getValue());
+  // }
 
 }

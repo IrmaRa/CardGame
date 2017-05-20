@@ -1,6 +1,6 @@
 package cards;
 
-public enum CardValue {
+public enum CardRank {
   ACE(1),
   TWO(2),
   THREE(3),
@@ -16,7 +16,7 @@ public enum CardValue {
   KING(10);
 
   private final int value;
-  private CardValue(int value) {
+  private CardRank(int value) {
    this.value = value;
  }
 
