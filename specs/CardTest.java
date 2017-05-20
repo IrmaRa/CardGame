@@ -8,17 +8,17 @@ public class CardTest {
   CardRank rank;
   
   @Before 
-  public void before(){
+  public void before() {
     card = new Card(CardSuit.DIAMONDS, CardRank.ACE);
   }
 
   @Test
-  public void canGetSuit(){
+  public void canGetSuit() {
     assertEquals(CardSuit.DIAMONDS, card.getSuit());
   }
 
   @Test
-  public void canGetRank(){
+  public void canGetRank() {
     assertEquals(CardRank.ACE, card.getRank());
   }
 

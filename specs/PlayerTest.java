@@ -11,7 +11,7 @@ public class PlayerTest {
   @Before
   public void before() {
     player = new Player("Louise");
-    card = new Card(CardSuit.DIAMONDS, CardRank.TWO);
+    card = new Card(CardSuit.DIAMONDS, CardRank.KING);
     deck = new Deck();
   }
 
@@ -30,6 +30,12 @@ public class PlayerTest {
   public void canGetCardsFromDeck() {
     player.getCard(card);
     assertEquals(1, player.cardCount());
+  }
+
+  @Test
+  public void canGetValueOfCardInHand() {
+    player.getCard(card);
+    assertEquals(10, player.getHandValue());
   }
 
 }

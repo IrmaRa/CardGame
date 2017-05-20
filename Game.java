@@ -16,11 +16,5 @@ public class Game {
     this.players.add(player);
   }
 
-  // public void getWinner() {
-  //   for(Player player : Player()){
-  //     if(player.getHand())
-  //   }
-  // }
+  }
 
-
-    }
